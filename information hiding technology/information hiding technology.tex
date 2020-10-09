@@ -1,7 +1,7 @@
 \newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}%准备表格过长自动换行的环境
 \documentclass{ctexart} 
 \usepackage{graphicx}
-\usepackage{cite}
+\usepackage{cite}%引用包
 \title{关于信息技术隐藏及其应用的综述}   
 \author{马思腾 20171110349}
 \CTEXsetup[format={\Large\bfseries}]{section}%使标题都左对齐
@@ -38,7 +38,7 @@
     \par 对于信息隐藏系统，我们可以将其一般模型归纳如图1所示：
 %插入图片    
     \begin{figure}[!ht]\centering   %添加图片环境的配置
-    \includegraphics[scale=0.8]{D:/Program Files/MikTex/documents/figure/图1.jpg}%tex文件夹下的相对路径
+    \includegraphics[scale=0.8]{D:/Program Files/MikTex/documents/information hiding technology/figure/图1.jpg}%tex文件夹下的相对路径
     \caption{信息隐藏系统的一般模型}
     \end{figure}
     \par\noindent 其中可以看出，系统包括一个嵌入过程和一个提取过程。隐藏对象在传输过程中会面临可能存在的隐藏攻击者的信息攻击及分析。在提取过程中，掩体对象不是必要的。在军事应用中，为了提高保密性一般需要预先对待隐藏信息进行预处理，如：加密，相应的也需要在提取后对得到的嵌入对象进行后处理，如：解密，恢复原始信息。
@@ -46,7 +46,7 @@
     \subsection{信息隐藏技术分支} 
     信息隐藏技术作为一门综合交叉学科，所涉及的领域与应用非常广泛，我们可以将其归纳如图2：
     \begin{figure}[!ht]\centering   %添加图片环境的配置
-    \includegraphics[scale=0.8]{D:/Program Files/MikTex/documents/figure/图2.jpg}%tex文件夹下的相对路径
+    \includegraphics[scale=0.8]{D:/Program Files/MikTex/documents/information hiding technology/figure/图2.jpg}%tex文件夹下的相对路径
     \caption{信息隐藏的主要分支}
     \end{figure}
     \par\noindent 其中隐蔽信道是指在多级安全水平的系统环境中，并不是专门设计且不应用于传输信息的通信路径称为隐蔽信道。匿名信道指的是寻求各种途径来隐藏通信的主体，即信息的发送者和接收者。隐写术是信息隐藏学的一个重要分支。相比叫密码学研究如何保护信息内容，隐写术更多的侧重于研究如何隐藏实际存在的信息。主要分为基于语义的隐写术和基于技术的隐写术。而最后一大类水印技术与隐写术不同，它并不总是要隐藏起来，而是需要增加健壮性以应对各种可能的攻击。当水印信息不是数字产品的版权信息，而是购买者的身份识别信息，这种水印技术被称为数字指纹，目的就是为了鉴别产品的非法分发者。
@@ -59,7 +59,7 @@
     目前深度学习技术取得了很大的突破，这些模型一般都是建立在对判别模型的改进优化和利用上\cite{ref4}，而生成式对抗网络则是在关注判别器的同时，也对生成器进行了改进，生成式对抗网络\cite{ref5}是由Goodfelllow等人提出的一种生成模型。GAN模型\cite{ref6}中含有一个生成器G和一个判别器D，生成器和判别器同时被训练，二者不断进行对抗博弈，最终达到纳什均衡，输出的结果可以高度拟合原图像。事实上，生成对抗网络就是对学习训练数据的近似拟合。
     \par 生成式对抗网络在研究应用中最广泛的就是用于图像的生成\cite{ref7}。GAN模型生成图像的基本过程如图3所示:
     \begin{figure}[!ht]\centering   %添加图片环境的配置
-    \includegraphics[scale=0.8]{D:/Program Files/MikTex/documents/figure/图3.jpg}%tex文件夹下的相对路径
+    \includegraphics[scale=0.8]{D:/Program Files/MikTex/documents/information hiding technology/figure/图3.jpg}%tex文件夹下的相对路径
     \caption{GAN模型}
     \end{figure}
     \par\noindent 在图像生成系统中，生成器G根据输入的随机噪声，通过训练生成假图像，而判别器D的工作就是将数据集和生成器G生成的加图片集进行对比。在整个对抗博弈过程中，如果判别器D不能分别出伪造的图像，则证明前面的生成器的参数和学习方法有效，反之，则需重新修改生成器D的参数和训练方法，提高和真实数据的拟合度。在无监管情况下，GAN还有很大的发展空间，但是由于无监管学习机制会导致生成器产生的图片严重违背常理，而判别器会出现判别失误分数过高的情况，所以说明生成式对抗网络的原始模型在控制图像的内容上有着很大的局限性。因此很多新的方法应运而生。
@@ -89,7 +89,7 @@
     \par 首先，衡量现代信息隐藏技术质量的指标大致有三点，分别是：容量，透明性和鲁棒性。容量在这里指的就是在单位时间惑着一幅作品中能够实际嵌入的隐藏消息数；透明性指的是所嵌入信息不被探测到的程度，也称不可感知性；鲁棒性指的是隐写载体抵抗不同种类信号处理攻击的能力，是数字水印比较注重的特征。这三个指标它们之间的关系往往是相互对立的，不能同时满足，高鲁棒性的算法往往修改了图像的重要部分以抵御攻击，因此对图像的改动比较大，会导致透明性指标下降。
     \par 其所用到的深度网络结构如图4所示\cite{ref9}，原始音频$A_{0}$首先经过频域变换，变换后即进入编码层网络，在这里进行秘密信息的嵌入，以及频域的反变换，完成后即可得到编码完成的音频$A_{e}$；然后进入解码层网络\cite{ref10}，由此处进行隐藏信息的重建，得到$M_{e}$。
     \begin{figure}[!ht]\centering   %添加图片环境的配置
-	\includegraphics[scale=0.8]{D:/Program Files/MikTex/documents/figure/图4.jpg}%tex文件夹下的相对路径
+	\includegraphics[scale=0.8]{D:/Program Files/MikTex/documents/information hiding technology/figure/图4.jpg}%tex文件夹下的相对路径
 	\caption{音频信息隐藏的深度网络结构}
     \end{figure}
     \section{总结和展望}

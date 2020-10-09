@@ -1,0 +1,88 @@
+@article{2014Generative,
+  title={Generative Adversarial Networks},
+  author={ Goodfellow, Ian J  and  Pouget-Abadie, Jean  and  Mirza, Mehdi  and  Xu, Bing  and  Warde-Farley, David  and  Ozair, Sherjil  and  Courville, Aaron  and  Bengio, Yoshua },
+  journal={Advances in Neural Information Processing Systems},
+  volume={3},
+  pages={2672-2680},
+  year={2014},
+}
+
+@article{周琳娜2019基于,
+  title={基于GAN图像生成的信息隐藏技术综述},
+  author={周琳娜 and 吕欣一},
+  journal={信息安全研究},
+  volume={005},
+  number={9},
+  pages={P.771-777},
+  year={2019},
+}
+
+@article{李强2004信息隐藏技术及其应用,
+  title={信息隐藏技术及其应用},
+  author={李强 and 郭震华 and 晁冰},
+  journal={安徽电子信息职业技术学院学报},
+  volume={003},
+  number={z1},
+  pages={30-32},
+  year={2004},
+}
+
+@article{刘峰2001信息隐藏技术及其应用,
+  title={信息隐藏技术及其应用},
+  author={刘峰 and 张鹏},
+  journal={天津通信技术},
+  volume={000},
+  number={001},
+  pages={1-4},
+  year={2001},
+}
+
+@article{张卫明2017信息隐藏技术及应用,
+  title={信息隐藏技术及应用},
+  author={张卫明 and 田辉},
+  year={2017},
+}
+
+@article{雷朴承2019基于深度学习的多媒体信息隐藏技术,
+  title={基于深度学习的多媒体信息隐藏技术},
+  author={雷朴承},
+  journal={电子技术与软件工程},
+  volume={000},
+  number={11},
+  pages={P.250-250},
+  year={2019},
+}
+
+@article{刘佳2019生成对抗网络在图像隐写中的应用,
+  title={生成对抗网络在图像隐写中的应用},
+  author={刘佳 and 柯彦 and 雷雨 and 李军 and 刘明明 and 杨晓元 and 张敏情},
+  journal={武汉大学学报：理学版},
+  number={2},
+  year={2019},
+}
+
+@phdthesis{宋好娴基于生成模型的无载体信息隐藏,
+  title={基于生成模型的无载体信息隐藏},
+  author={宋好娴},
+  school={河南师范大学},
+}
+
+@article{王耀杰2018基于生成对抗网络的信息隐藏方案,
+  title={基于生成对抗网络的信息隐藏方案},
+  author={王耀杰 and 钮可 and 杨晓元},
+  journal={计算机应用},
+  volume={38},
+  number={10},
+  pages={177-182},
+  year={2018},
+}
+
+@article{刘明明2018基于生成对抗网络的无载体信息隐藏,
+  title={基于生成对抗网络的无载体信息隐藏},
+  author={刘明明 and 张敏情 and 刘佳 and 高培贤 and 张英男},
+  journal={应用科学学报},
+  volume={36},
+  number={2},
+  pages={371-382},
+  year={2018},
+}
